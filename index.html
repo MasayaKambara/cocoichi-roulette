@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoCo壱 メニュールーレット</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="roulette-panel" aria-labelledby="app-title">
+        <div class="brand-bar">
+          <span class="brand-mark" aria-hidden="true">CoCo</span>
+          <span class="brand-line"></span>
+        </div>
+
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Pork curry roulette</p>
+            <h1 id="app-title">CoCo壱 メニュールーレット</h1>
+            <p class="lead">今日のポークカレーを一発で決めます。</p>
+          </div>
+
+          <div class="curry-visual" aria-hidden="true">
+            <div class="plate">
+              <div class="rice"></div>
+              <div class="curry"></div>
+              <div class="cutlet cutlet-1"></div>
+              <div class="cutlet cutlet-2"></div>
+              <div class="corn corn-1"></div>
+              <div class="corn corn-2"></div>
+              <div class="corn corn-3"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="base-menu-card">
+          <span>基本メニュー</span>
+          <strong>ポークカレー</strong>
+        </div>
+
+        <button id="spinButton" class="spin-button" type="button">
+          ルーレットを回す
+        </button>
+
+        <section id="resultCard" class="result-card is-empty" aria-live="polite">
+          <p class="result-placeholder">抽選結果がここに表示されます</p>
+        </section>
+
+        <section class="history-section" aria-labelledby="history-title">
+          <div class="section-heading">
+            <h2 id="history-title">履歴</h2>
+            <button id="clearHistoryButton" class="ghost-button" type="button" disabled>
+              クリア
+            </button>
+          </div>
+          <ol id="historyList" class="history-list">
+            <li class="history-empty">まだ履歴はありません</li>
+          </ol>
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
